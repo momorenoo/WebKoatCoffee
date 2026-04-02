@@ -1,0 +1,98 @@
+<!-- MENU CARD COMPONENT - Reference untuk custom card -->
+
+<!-- EXAMPLE 1: Coffee Card with Badge -->
+<div class="menu-card">
+  <div class="menu-card-image">
+    ☕
+    <div class="menu-card-badge">🔥 Favorit</div>
+  </div>
+  <div class="menu-card-content">
+    <h3 class="menu-card-name">Si Koat</h3>
+    <p class="menu-card-desc">Signature drink Koat Kopi - rahasia yang bikin ketagihan!</p>
+    <div class="menu-card-footer">
+      <div>
+        <span class="menu-card-price-label">Mulai dari</span>
+        <div class="menu-card-price">Rp 18.000</div>
+      </div>
+      <button class="btn btn-small" data-whatsapp data-message="Halo, saya ingin memesan Si Koat (Rp 18.000)">Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- EXAMPLE 2: Food Card without Badge -->
+<div class="menu-card">
+  <div class="menu-card-image">
+    🍜
+  </div>
+  <div class="menu-card-content">
+    <h3 class="menu-card-name">Mie Koat</h3>
+    <p class="menu-card-desc">Mie signature dengan bumbu khas Koat</p>
+    <div class="menu-card-footer">
+      <div>
+        <span class="menu-card-price-label">Mulai dari</span>
+        <div class="menu-card-price">Rp 20.000</div>
+      </div>
+      <button class="btn btn-small" data-whatsapp data-message="Halo, saya ingin memesan Mie Koat (Rp 20.000)">Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- EXAMPLE 3: Non-Coffee Card -->
+<div class="menu-card">
+  <div class="menu-card-image">
+    🍹
+  </div>
+  <div class="menu-card-content">
+    <h3 class="menu-card-name">Red Velvet</h3>
+    <p class="menu-card-desc">Minuman premium rasa red velvet yang lezat</p>
+    <div class="menu-card-footer">
+      <div>
+        <span class="menu-card-price-label">Mulai dari</span>
+        <div class="menu-card-price">Rp 18.000</div>
+      </div>
+      <button class="btn btn-small" data-whatsapp data-message="Halo, saya ingin memesan Red Velvet (Rp 18.000)">Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- USAGE NOTES:
+
+1. EMOJI REFERENCE:
+   ☕ = Kopi
+   🍹 = Non-kopi (Juice, Minuman)
+   🍜 = Makanan (Mie, Noodles)
+   🍚 = Rice Bowl
+   🍗 = Ayam/Chicken
+   🍵 = Matcha
+   🍫 = Dark Choco
+   🧊 = Iced
+
+2. BADGE STYLES:
+   - <div class="menu-card-badge">🔥 Favorit</div>
+   - <div class="menu-card-badge">⭐ Paling Laris</div>
+   - <div class="menu-card-badge">🌟 Recommended</div>
+   - Bisa juga tanpa badge jika tidak ada
+
+3. PRICE FORMAT:
+   - Format: "Rp X.XXX" (Indonesian rupiah)
+   - Contoh: Rp 10.000, Rp 18.500, Rp 225.000
+
+4. MESSAGE WHATSAPP:
+   - Auto-generate dari item name + price
+   - Format: "Halo, saya ingin memesan {NAME} (Rp {PRICE})"
+
+5. DYNAMIC GENERATION:
+   - Cards ini di-generate otomatis dari menu.json
+   - Bisa juga di-edit langsung di menu.js function createMenuCard()
+
+6. HOVER EFFECT:
+   - Card akan naik (translateY -8px)
+   - Shadow akan meningkat
+   - Smooth transition 0.3s
+
+7. RESPONSIVE:
+   - Desktop: 3+ cards per row
+   - Tablet: 2-3 cards per row
+   - Mobile: 1 card per row
+
+-->
