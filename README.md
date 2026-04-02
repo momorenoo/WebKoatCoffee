@@ -1,6 +1,6 @@
 # 🔥 Koat Kopi UAD - Website Landing Page
 
-**Ngopi Murah, Nongkrong Mewah** ☕
+**Ngopi Bareng? Di Sini Aja** ☕
 
 Website landing page yang clean, modern, dan catchy untuk kedai kopi murah Koat Kopi UAD. Didesain khusus untuk menarik mahasiswa dengan konsep "Warm Coffee Street Vibes".
 
@@ -52,8 +52,6 @@ Website landing page yang clean, modern, dan catchy untuk kedai kopi murah Koat 
 - Vanilla JavaScript (ES6+)
 - JSON untuk data menu
 - Google Maps API (embed)
-
-**Tidak perlu external framework!** Semua built from scratch untuk performa maksimal.
 
 ---
 
@@ -125,8 +123,7 @@ cd WebKoatCoffee
 # Buka index.html di browser atau gunakan live server
 ```
 
-### 2. Live Server (Recommended)
-Install VS Code extension "Live Server" dan click "Go Live".
+### 2. Live Server
 
 ### 3. Update Menu Data
 
@@ -149,18 +146,18 @@ Edit file `data/menu.json`:
 
 ### 4. Update WhatsApp Number
 
-Di `assets/js/main.js`, update nomor WhatsApp:
+Di `assets/js/main.js`
 
 ```javascript
-const whatsappNumber = '628xx'; // Update ke nomor Kamu!
+const whatsappNumber = '628xx';
 ```
 
 ### 5. Update Instagram Username
 
-Di `assets/js/main.js`, update username Instagram:
+Di `assets/js/main.js`
 
 ```javascript
-const instagramUsername = 'koatkopi_uad'; // Update ke Instagram Kamu!
+const instagramUsername = 'koatkopi_uad';
 ```
 
 ---
@@ -169,14 +166,11 @@ const instagramUsername = 'koatkopi_uad'; // Update ke Instagram Kamu!
 
 ### Mengubah Warna
 
-Edit `:root` di `assets/css/style.css`:
-
 ```css
 :root {
   --color-coffee: #6F4E37;    /* Coklat kopi */
   --color-cream: #F5E6D3;     /* Cream */
   --color-blue: #2C5F8D;      /* Biru brand */
-  /* ... variables lainnya */
 }
 ```
 
@@ -196,8 +190,6 @@ Edit `:root` di `assets/css/style.css`:
 
 ### Mengubah Location/Jam Operasional
 
-Edit di `index.html` section "LOCATION SECTION":
-
 ```html
 <p>Umbulharjo, Yogyakarta 55161</p>
 <p>Setiap hari dari jam 08:00 - 22:00 WIB</p>
@@ -208,8 +200,8 @@ Edit di `index.html` section "LOCATION SECTION":
 ## 📊 Key Sections Breakdown
 
 ### 1. Hero Section
-- Headline yang catchy: "Ngopi Murah, Nongkrong Mewah"
-- Subtitle: "Mulai dari 10K aja!"
+- Headline yang catchy: "Ngopi Bareng? Di Sini Aja"
+- Subtitle: "Ruang tenang, aroma kopi, dan momen yang terasa lebih berarti. Tempat sempurna untuk menikmati waktu tanpa terburu-buru.
 - CTA buttons: Order & Lihat Menu
 - Background gradient aesthetic
 
@@ -384,5 +376,3 @@ Punya pertanyaan atau suggestion? Bisa langsung:
 - ✉️ Email ke contact Kamu
 
 ---
-
-**Happy Coding! 🔥☕**
