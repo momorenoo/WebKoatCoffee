@@ -1,0 +1,146 @@
+{
+  "coffee": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "price": 10000,
+      "description": "Kopi murni yang kuat dan nikmat",
+      "image": "espresso.jpg",
+      "badge": null
+    },
+    {
+      "id": 2,
+      "name": "Americano",
+      "price": 12000,
+      "description": "Espresso + air panas, rasa kopi asli",
+      "image": "americano.jpg",
+      "badge": null
+    },
+    {
+      "id": 3,
+      "name": "Latte",
+      "price": 15000,
+      "description": "Kopi + susu, creamy dan smooth",
+      "image": "latte.jpg",
+      "badge": null
+    },
+    {
+      "id": 4,
+      "name": "Si Koat",
+      "price": 18000,
+      "description": "Signature drink Koat Kopi",
+      "image": "si-koat.jpg",
+      "badge": "🔥 Favorit"
+    },
+    {
+      "id": 5,
+      "name": "Cappuccino",
+      "price": 15000,
+      "description": "Espresso + foam, klasik dan sedap",
+      "image": "cappuccino.jpg",
+      "badge": null
+    }
+  ],
+  "nonCoffee": [
+    {
+      "id": 6,
+      "name": "Red Velvet",
+      "price": 18000,
+      "description": "Minuman premium rasa red velvet yang lezat",
+      "image": "red-velvet.jpg",
+      "badge": null
+    },
+    {
+      "id": 7,
+      "name": "Matcha Latte",
+      "price": 20000,
+      "description": "Matcha original dengan susu, sehat dan enak",
+      "image": "matcha.jpg",
+      "badge": null
+    },
+    {
+      "id": 8,
+      "name": "Dark Choco",
+      "price": 17000,
+      "description": "Cokelat panas yang creamy dan nikmat",
+      "image": "dark-choco.jpg",
+      "badge": null
+    },
+    {
+      "id": 9,
+      "name": "Iced Tea",
+      "price": 8000,
+      "description": "Teh dingin segar yang menyegarkan",
+      "image": "iced-tea.jpg",
+      "badge": null
+    }
+  ],
+  "food": [
+    {
+      "id": 10,
+      "name": "Mie Koat",
+      "price": 20000,
+      "description": "Mie signature dengan bumbu khas Koat",
+      "image": "mie-koat.jpg",
+      "badge": "🔥 Favorit"
+    },
+    {
+      "id": 11,
+      "name": "Mie Koat Pedas",
+      "price": 22000,
+      "description": "Mie Koat yang pedas nginmam, mantap bro!",
+      "image": "mie-pedas.jpg",
+      "badge": "🔥 Populer"
+    },
+    {
+      "id": 12,
+      "name": "Ayam Geprek",
+      "price": 18000,
+      "description": "Ayam mentah digebrek dengan sambal khas",
+      "image": "ayam-geprek.jpg",
+      "badge": null
+    },
+    {
+      "id": 13,
+      "name": "Rice Bowl Crispy",
+      "price": 20000,
+      "description": "Nasi dengan lauk pilihan yang crispy",
+      "image": "rice-bowl.jpg",
+      "badge": "⭐ Paling Laris"
+    },
+    {
+      "id": 14,
+      "name": "Tahu Goreng",
+      "price": 12000,
+      "description": "Tahu renyah dengan sambal pedas",
+      "image": "tahu-goreng.jpg",
+      "badge": null
+    }
+  ],
+  "bestsellers": [
+    {
+      "id": 4,
+      "category": "coffee",
+      "name": "Si Koat",
+      "price": 18000,
+      "description": "Signature drink Koat Kopi - rahasia yang bikin ketagihan!",
+      "badge": "🔥 Favorit Mahasiswa"
+    },
+    {
+      "id": 11,
+      "category": "food",
+      "name": "Mie Koat Pedas",
+      "price": 22000,
+      "description": "Sensasi pedas yang memorable dan signature!",
+      "badge": "🔥 HITS!"
+    },
+    {
+      "id": 13,
+      "category": "food",
+      "name": "Rice Bowl Crispy",
+      "price": 20000,
+      "description": "Nasi dengan protein crispy yang memuaskan perut",
+      "badge": "⭐ Paling Laris"
+    }
+  ]
+}
