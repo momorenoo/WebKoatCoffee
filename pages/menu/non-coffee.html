@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu Non-Kopi Koat Kopi UAD - Red Velvet, Matcha, Dark Choco, dan minuman segar lainnya">
+  <title>Menu Non-Kopi | Koat Kopi UAD</title>
+  <link rel="icon" type="image/x-icon" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="navbar-brand">
+        ☕ Koat<span>Kopi</span>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="../../index.html">Beranda</a></li>
+        <li><a href="../../menu.html">Menu</a></li>
+        <li><a href="../../about.html">Tentang</a></li>
+        <li><a href="../../contact.html">Kontak</a></li>
+      </ul>
+      <div class="navbar-cta">
+        <button class="mobile-toggle">☰</button>
+        <a href="../../contact.html" class="btn btn-primary btn-small">Order Sekarang</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <div class="hero-content">
+        <h1 style="font-size: 2.5rem;">🍹 Menu Non-Kopi</h1>
+        <p>Untuk yang ingin sesuatu yang berbeda! Red Velvet, Matcha, Dark Choco, dan lainnya!</p>
+      </div>
+      <div class="hero-image">🍹</div>
+    </div>
+  </section>
+
+  <section class="menu section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Semua Minuman Non-Kopi</h2>
+      </div>
+
+      <div class="menu-items">
+        <!-- Dynamically filled by menu.js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="container">
+      <h2>Pesan Sekarang! 🔥</h2>
+      <p>Nikmati minuman segar kami dengan harga yang terjangkau untuk semua kalangan!</p>
+      <div class="cta-buttons">
+        <button class="btn btn-primary btn-large" data-whatsapp data-message="Halo Koat Kopi! Saya ingin memesan minuman non-kopi...">
+          💬 Order via WhatsApp
+        </button>
+        <a href="../../menu.html" class="btn btn-primary btn-large" style="background-color: transparent; color: white; border: 2px solid white;">
+          📋 Menu Lainnya
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+        <h4>☕ Koat Kopi</h4>
+        <p>Ngopi murah, nongkrong mewah!</p>
+        <div class="footer-social">
+          <a href="#" data-instagram>📱</a>
+          <a href="#" data-whatsapp>💬</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Link</h4>
+        <a href="../../index.html">Beranda</a>
+        <a href="../../menu.html">Menu</a>
+        <a href="../../contact.html">Kontak</a>
+      </div>
+      <div class="footer-section">
+        <h4>Hubungi</h4>
+        <p>📱 WhatsApp: <a href="https://wa.me/628xxxxxxxx">+62 8xx xxxx xxxx</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Koat Kopi UAD. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" style="display: none; position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background-color: #6F4E37; color: white; border: none; border-radius: 50%; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999;">
+    ⬆️
+  </button>
+
+  <script>
+    // Set menu category to 'nonCoffee' on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      currentCategory = 'nonCoffee';
+      loadMenuData();
+    });
+  </script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/menu.js"></script>
+</body>
+
+</html>
