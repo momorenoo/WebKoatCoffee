@@ -8,8 +8,9 @@ let currentCategory = 'coffee';
 // Fetch menu data
 async function loadMenuData() {
   try {
-    const response = await fetch('/data/menu.json');
+    const response = await fetch('data/menu.json');
     allMenuItems = await response.json();
+    console.log('Menu data loaded successfully');
     initMenuSystem();
   } catch (error) {
     console.error('Error loading menu data:', error);
@@ -43,6 +44,7 @@ function loadFallbackMenuData() {
 function initMenuSystem() {
   setupMenuCategoryButtons();
   displayMenuByCategory(currentCategory);
+  displayBestsellers();
 }
 
 // Setup category buttons
@@ -187,20 +189,45 @@ function searchMenuItems(query) {
 function displayBestsellers() {
   const bestsellersContainer = document.querySelector('.bestseller-cards');
 
-  if (!bestsellersContainer || !allMenuItems.bestsellers) {
+  if (!bestsellersContainer) {
+    console.error('Bestsellers container not found');
     return;
   }
 
   bestsellersContainer.innerHTML = '';
+
+  // Use the bestsellers category from JSON
+  if (!allMenuItems.bestsellers || allMenuItems.bestsellers.length === 0) {
+    bestsellersContainer.innerHTML = `
+      <div style="grid-column: 1/-1; text-align: center; padding: 3rem 1rem;">
+        <p style="font-size: 1.2rem; color: #999;">Belum ada menu favorit 😅</p>
+      </div>
+    `;
+    return;
+  }
+
+  console.log('Found bestsellers:', allMenuItems.bestsellers);
 
   allMenuItems.bestsellers.forEach((item) => {
     const card = document.createElement('div');
     card.className = 'bestseller-card';
 
     const emojiMap = {
+      coffee: '☕',
+      espresso: '☕',
+      americano: '☕',
+      latte: '☕',
       'si koat': '☕',
+      cappuccino: '☕',
+      'red velvet': '🍹',
+      matcha: '🍵',
+      'dark choco': '🍫',
+      'iced tea': '🧊',
+      'mie koat': '🍜',
       'mie koat pedas': '🍜',
-      'rice bowl crispy': '🍚'
+      'rice bowl crispy': '🍚',
+      'ayam geprek': '🍗',
+      'tahu goreng': '🟫'
     };
 
     const emoji = emojiMap[item.name.toLowerCase()] || '⭐';
@@ -220,7 +247,6 @@ function displayBestsellers() {
 // Initialize menu on page load
 document.addEventListener('DOMContentLoaded', () => {
   loadMenuData();
-  displayBestsellers();
 });
 
 // Export functions for use in HTML
