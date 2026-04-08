@@ -15,6 +15,10 @@
 </head>
 
 <body>
+  <!-- Hidden elements untuk menyimpan nomor WhatsApp dan username Instagram -->
+  <div id="whatsapp-number" style="display: none;">08895880118</div>
+  <div id="instagram-username" style="display: none;">koatkopi</div>
+
   <!-- Navigation -->
   <nav>
     <div class="container">
@@ -58,9 +62,9 @@
           <div style="font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">💬</div>
           <h3 style="color: #25D366; text-align: center; margin-bottom: 1rem; font-size: 1.3rem;">WhatsApp</h3>
           <p style="text-align: center; margin-bottom: 1rem; font-size: 1rem; color: #666;">Chat, order, dan tanya-tanya langsung!</p>
-          <a href="https://wa.me/628xxxxxxxx" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
-            📱 +62 8xx xxxx xxxx
-          </a>
+          <button data-whatsapp class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+            📱 +62 889 5880 118
+          </button>
           <p style="text-align: center; font-size: 0.85rem; color: #999; margin-top: 1rem;">*Klik untuk membuka WhatsApp</p>
         </div>
 
@@ -209,7 +213,7 @@
       <h2>Pesan Sekarang! 🔥</h2>
       <p>Jangan lama-lama! Hubungi kami dan nikmati minuman favorit Anda dengan harga super terjangkau.</p>
       <div class="cta-buttons">
-        <button class="btn btn-primary btn-large" data-whatsapp data-message="Halo Koat Kopi! Saya ingin memesan...">
+        <button type="button" class="btn btn-primary btn-large" data-whatsapp data-message="Halo Koat Kopi! Saya ingin memesan...">
           💬 Order via WhatsApp
         </button>
         <a href="menu.html" class="btn btn-primary btn-large" style="background-color: transparent; color: white; border: 2px solid white;">

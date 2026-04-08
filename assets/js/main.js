@@ -101,11 +101,30 @@ function initIntersectionObserver() {
 
 // WhatsApp Integration
 function initWhatsAppButtons() {
-  const whatsappNumber = '628xx'; // Update with actual number
+  // Baca nomor dari elemen dengan id 'whatsapp-number' atau gunakan default
+  const whatsappElement = document.getElementById('whatsapp-number') || document.querySelector('[data-whatsapp-number]');
+  let whatsappNumber = '628895880118'; // Default fallback dalam format internasional
+  
+  if (whatsappElement) {
+    let rawNumber = whatsappElement.textContent.trim() || whatsappElement.getAttribute('data-whatsapp-number') || whatsappNumber;
+    // Remove any non-digit characters
+    rawNumber = rawNumber.replace(/[^0-9+]/g, '').replace(/^\+/, ''); // Remove + first
+    // Convert 0 at start to 62 (Indonesia country code)
+    if (rawNumber.startsWith('0')) {
+      rawNumber = '62' + rawNumber.substring(1);
+    }
+    // Ensure it starts with country code
+    if (!rawNumber.startsWith('62')) {
+      rawNumber = '62' + rawNumber;
+    }
+    whatsappNumber = rawNumber;
+  }
+  
   const whatsappBtns = document.querySelectorAll('[data-whatsapp]');
 
   whatsappBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       const message = btn.getAttribute('data-message') || 'Halo, saya ingin memesan...';
       const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
@@ -115,11 +134,21 @@ function initWhatsAppButtons() {
 
 // Instagram Integration
 function initInstagramButtons() {
-  const instagramUsername = 'koatkopi_uad'; // Update with actual username
+  // Baca username dari elemen dengan id 'instagram-username' atau gunakan default
+  const instagramElement = document.getElementById('instagram-username') || document.querySelector('[data-instagram-username]');
+  let instagramUsername = 'koatkopi'; // Default fallback (tanpa @)
+  
+  if (instagramElement) {
+    instagramUsername = instagramElement.textContent.trim() || instagramElement.getAttribute('data-instagram-username') || instagramUsername;
+    // Remove @ symbol if exist
+    instagramUsername = instagramUsername.replace('@', '');
+  }
+  
   const instagramBtns = document.querySelectorAll('[data-instagram]');
 
   instagramBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       window.open(`https://instagram.com/${instagramUsername}`, '_blank');
     });
   });
