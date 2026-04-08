@@ -22,6 +22,10 @@
 </head>
 
 <body>
+  <!-- Hidden elements untuk menyimpan nomor WhatsApp dan username Instagram -->
+  <div id="whatsapp-number" style="display: none;">08895880118</div>
+  <div id="instagram-username" style="display: none;">koatkopi</div>
+
   <!-- ================================
        NAVBAR / NAVIGATION
   ================================ -->
@@ -234,14 +238,14 @@
       <h2>Siap Nongkrong? 🔥</h2>
       <p>Jangan tunda lagi! Order sekarang dan nikmati minuman dan makanan terbaik Koat Kopi dengan harga yang super terjangkau.</p>
       <div class="cta-buttons">
-        <button class="btn btn-primary btn-large" data-whatsapp data-message="Halo Koat Kopi! Saya ingin memesan...">
-          💬 Order via WhatsApp
+        <button type="button" class="btn btn-primary btn-large" data-whatsapp data-message="Halo Koat Kopi! Saya ingin memesan...">
+          <a href="https://api.whatsapp.com/send/?phone=628895880118">💬 Order via WhatsApp</a>
         </button>
-        <a href="#menu-section" class="btn btn-primary btn-large" style="background-color: transparent; color: white; border: 2px solid white;">
+        <a href="#menu-section" class="btn btn-primary btn-large">
           📋 Lihat Menu Lengkap
         </a>
-        <button class="btn btn-primary btn-large" data-instagram>
-          📸 Follow Instagram
+        <button type="button" class="btn btn-primary btn-large" data-instagram="koatkopi">
+          <a href="https://www.instagram.com/koatkopi">📸 Follow Instagram</a>
         </button>
       </div>
     </div>
@@ -256,9 +260,9 @@
         <h4>Koat Kopi</h4>
         <p>Ngopi Bareng? Di Sini Aja. Tempat sempurna untuk menikmati waktu.</p>
         <div class="footer-social">
-          <a href="#" data-instagram title="Instagram">📱</a>
-          <a href="#" data-whatsapp title="WhatsApp">💬</a>
-          <a href="#" title="Email">✉️</a>
+          <a href="https://www.instagram.com/koatkopi" data-instagram title="Instagram">📱</a>
+          <a href="https://wa.me/628895880118" data-whatsapp title="WhatsApp">💬</a>
+          <a href="mailto:info@koatkopi.id" title="Email">✉️</a>
         </div>
       </div>
 
@@ -280,7 +284,7 @@
 
       <div class="footer-section">
         <h4>Hubungi Kami</h4>
-        <p>📱 WhatsApp: <a href="https://wa.me/628xxxxxxxx">+62 8xx xxxx xxxx</a></p>
+        <p>📱 WhatsApp: <a href="https://wa.me/628895880118">+62 889 5880 118</a></p>
         <p>📧 Email: <a href="mailto:info@koatkopi.id">info@koatkopi.id</a></p>
         <p>📍 Jam Buka: 08:00 - 22:00 WIB</p>
       </div>
